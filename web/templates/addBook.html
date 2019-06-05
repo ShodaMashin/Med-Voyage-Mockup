@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main row justify-content-center">
+        <div class="col-6">
+            {% if error == True %}
+            <span class="red-header">
+                Invalid book information
+            </span>
+            <br>
+            {% endif %}
+            <form method="post">
+                <span class="field-header">Title</span>
+                <input class="form-input" name="title"/>
+                <span class="field-header">Author</span>
+                <input class="form-input" name="author"/>
+                <span class="field-header">ISBN</span>
+                <input class="form-input" name="isbn"/>
+                <span class="field-header">Date Published</span>
+                <input class="form-input" name="published"/>
+                <div class="row justify-content-around">
+                    <div class="col-6">
+                        <button onclick="window.location.href = '{{ url_for('books') }}'; return false;"
+                            class="form-input form-button">
+                            Cancel
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="submit" class="form-input form-button">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

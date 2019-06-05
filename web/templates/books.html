@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main row justify-content-center">
+        <div class="col-8">
+            {% if error == False %}
+            <span class="green-header">Book added successfully!</span>
+            {% endif %}
+            <div class="row table-header">
+                <div class="col-3 d-flex align-items-end">
+                    <span class="align-bottom">Title</span>
+                </div>
+                <div class="col-3 d-flex align-items-end">
+                    <span class="align-bottom">Author</span>
+                </div>
+                <div class="col-3 d-flex align-items-end">
+                    <span class="align-bottom">Date Added</span>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <a class="mini-button form-button text-center"
+                        href="{{ url_for('book') }}"
+                    >
+                        Add Book
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            {% for book in books %}
+            <div class="row table-row">
+                <div class="col-3 d-flex align-items-center">
+                    <span class="align-middle">{{book.title}}</span>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <span class="align-middle">{{book.author}}</span>
+                </div>
+                <div class="col-3 d-flex align-items-center">
+                    <span class="align-middle">{{book.published}}</span>
+                </div>
+                <div class="col-3 d-flex justify-content-end align-items-center">
+                    <a class="delet-this mini-button form-button text-center">
+                        <i class="far fa-trash-alt"></i>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

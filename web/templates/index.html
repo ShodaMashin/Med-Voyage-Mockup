@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main row justify-content-center">
+        <div class="col-6">
+            <div>
+                <a href="{{ url_for('books') }}">
+                    <button class="form-input form-button">
+                        View/Edit Books
+                    </button>
+                </a>
+                <a href="{{ url_for('analytics') }}">
+                    <button class="form-input form-button">
+                        View Analytics
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

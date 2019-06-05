@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Med Voyage - Medical Tourism Made Easy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    >
+</head>
+<body>
+    <div class="content">
+        <div class="container-fluid title-banner">
+            <div class="row">
+                <a class="col-auto align-middle" href="{{ url_for('index') }}">
+                    <img
+                        class="logo align-middle"
+                        src="{{ url_for('static', filename='img/logo.png') }}"
+                        alt="group icon"
+                    />
+                </a>
+                <a class="col-auto mr-auto" href="{{ url_for('index') }}">
+                    <div class="header-container">
+                        <div class="header">MED VOYAGE</div>
+                        <div class="sub-header">MEDICAL TOURISM MADE EASY</div>
+                    </div>
+                </a>
+                <div class="col-auto">
+                    {% if 'username' in session %}
+                    <a class="nav-element text-center"
+                       href="{{ url_for('logout') }}">Logout</a>
+                    {% else %}
+                    <a class="login-btn text-center"
+                       href="{{ url_for('login') }}">Login</a>
+                    {% endif %}
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto debug-nav">
+                    <div class="sticky-nav">
+                        <a class="nav-element top-nav row text-center"
+                            href="{{ url_for('index') }}">
+                            <div class="col">
+                                Home
+                            </div>
+                        </a>
+                        <a class="nav-element row text-center"
+                            href="{{ url_for('books') }}">
+                            <div class="col">
+                                About Us
+                            </div>
+                        </a>
+                        <a class="nav-element row text-center"
+                            href="{{ url_for('book') }}">
+                            <div class="col">
+                                Procedures
+                            </div>
+                        </a>
+                        <a class="nav-element row text-center"
+                            href="{{ url_for('analytics') }}">
+                            <div class="col">
+                                Services
+                            </div>
+                        </a>
+                        <a class="nav-element row text-center"
+                            href="{{ url_for('analytics') }}">
+                            <div class="col">
+                                Contact Us
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col bodyarea">
+                    <div class="container">
+                        {% block content %}
+                        {% endblock %}
+                        <div class="row footer-text justify-content-center">
+                            <div class="col-auto">
+                                Ahana Chatterjee
+                            </div>
+                            <div class="col-auto">
+                                Fereshta Qayumi
+                            </div>
+                            <div class="col-auto">
+                                Maggie Belcher
+                            </div>
+                            <div class="col-auto">
+                                Marcela Vega Rojas
+                            </div>
+                            <div class="col-auto">
+                                Meshael Albuthie
+                            </div>
+                            <div class="col-auto">
+                                Paul Lozowicki
+                            </div>
+                            <div class="col-auto">
+                                Sarah Amin
+                            </div>
+                        </div>
+                        <div class="row footer-text sub-footer justify-content-center">
+                            <div class="col-auto d-flex align-items-center">
+                                <span class="d-flex align-middle">
+                                    This Web-Mockup was developed by Jack Belcher
+                                </span>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <a href="https://github.com/ShodaMashin" class="d-flex align-middle">
+                                    GitHub
+                                </a>
+                            </div>
+                            <div class="col-auto d-flex align-items-center">
+                                <a href="https://www.linkedin.com/in/JackBelcher4177" class="d-flex align-middle">
+                                    LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

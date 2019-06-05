@@ -1,0 +1,179 @@
+.title-banner{
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 5px 0px 5px #505050;
+    position: relative;
+    z-index: 1000;
+}
+
+.colors{
+    color: #014d32; /*deep green*/
+    color: #8ccdb0; /*mint green*/
+    color: #303030; /*grey*/
+}
+
+
+.debug-nav{
+    background-color: #014d32;
+}
+
+.sticky-nav{
+    padding-top: 20px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.nav-element{
+    width: 230px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+.login-btn{
+    width: 165px;
+}
+
+.nav-element:hover{
+    background-color: #8ccdb0;;
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-container{
+    position: relative;
+    padding: 20px 0px;
+    height: 127px;
+    width: 420px;
+}
+
+.header{
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    font-size: 65px;
+    font-weight: 600;
+    color: #014d32;
+}
+
+.header:hover{
+    text-decoration: none;
+}
+
+.sub-header{
+    position: absolute;
+    top: 74px;
+    left: -2px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #014d32;
+}
+
+.sub-header:hover{
+    text-decoration: none;
+}
+
+.field-header{
+  font-size: 16px;
+  font-weight: 500;
+  color: #563d7c;
+}
+
+.red-header{
+  font-size: 16px;
+  font-weight: 500;
+  color: #ad3232;
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.form-input{
+  width: 100%;
+  height: 40px;
+  padding: 3px 10px;
+  border: 1px solid grey;
+  border-radius: .3rem;
+  margin-bottom: 20px !important;
+}
+
+.form-button{
+  background-color: #563d7c;
+  color: #e8e8e8;
+  text-align: center;
+  border: none;
+}
+
+.form-button:hover{
+  background-color: #6a4a99;
+  text-decoration: none;
+  color: #e8e8e8;
+}
+
+.mini-button{
+  width: auto;
+  padding: 5px 5px;
+  border-radius: .3rem;
+}
+
+.table-header{
+  font-size: 16px;
+  font-weight: 500;
+  color: #563d7c;
+  padding: 10px;
+}
+
+.table-row{
+  padding: 10px;
+  font-size: 16px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.table-row:hover{
+  color: #777777;
+  background-color: #fbfbfb;
+}
+
+.delet-this{
+  color: #e8e8e8 !important;
+  padding: 5px 10px;
+  height: auto;
+}
+
+.red-header{
+  color: #d64848;
+}
+
+.green-header{
+  color: #3ba542;
+}
+
+.footer-text{
+  margin-top: 50px;
+  border-top: 1px solid #e8e8e8;
+  padding: 10px;
+  color: #777777;
+  font-size: 13px;
+}
+
+.sub-footer{
+    border-top: None;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.small-circle{
+  padding-top: 3px;
+  font-size: 6px;
+}
+
+.logo{
+    padding: 20px;
+    height: 127px;
+}
+
+.bodyarea{
+    min-height: calc(100vh - 127px);
+}
