@@ -7,19 +7,33 @@
     {% extends "template.html" %}
     {% block content %}
 
-    <div class="main row justify-content-center">
-        <div class="col-6">
-            <div>
-                <a href="{{ url_for('books') }}">
-                    <button class="form-input form-button">
-                        View/Edit Books
+    <div class="main row justify-content-center position-relative index">
+        <img
+            class="cover-img align-middle position-absolute"
+            src="{{ url_for('static', filename='img/cover.png') }}"
+            alt="cover image"
+        />
+        <div class="col-11 index-form">
+            <div class="row justify-content-around index-form-content">
+                <div class="col-4">
+                    <span class="field-header-white">I am looking for</span>
+                    <input class="form-input" type="text" name="username"/>
+                </div>
+                <div class="col-4">
+                    <span class="field-header-white">Location</span>
+                    <input class="form-input" type="text" name="username"/>
+                </div>
+                <div class="col-4">
+                    <span class="field-header-white">Dates</span>
+                    <input class="form-input" type="text" name="username"/>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-3">
+                    <button type="submit" class="form-input form-button">
+                        Search
                     </button>
-                </a>
-                <a href="{{ url_for('analytics') }}">
-                    <button class="form-input form-button">
-                        View Analytics
-                    </button>
-                </a>
+                </div>
             </div>
         </div>
     </div>
