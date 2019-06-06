@@ -114,6 +114,12 @@
   color: #014d32;
 }
 
+.field-header-table{
+  font-size: 16px;
+  font-weight: 500;
+  color: #8ccdb0;
+}
+
 .field-header-white{
     font-size: 16px;
     font-weight: 500;
@@ -139,6 +145,17 @@
     margin-bottom: 20px !important;
 }
 
+.consultation-input{
+    width: 100%;
+    height: 50px;
+    padding: 3px 10px;
+    border: 1px solid grey;
+    border-radius: .3rem;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+
+
 .form-button{
   background-color: #014d32;
   color: #e8e8e8;
@@ -161,7 +178,7 @@
 .table-header{
   font-size: 16px;
   font-weight: 500;
-  color: #563d7c;
+  color: #303030;
   padding: 10px;
 }
 
@@ -174,6 +191,17 @@
 .table-row:hover{
   color: #777777;
   background-color: #fbfbfb;
+}
+
+.no-deco:hover{
+    text-decoration: none;
+}
+
+.hospital-img{
+    background-color: black;
+    width: inherit;
+    height: 171.479246753px;
+    object-fit: cover;
 }
 
 .delet-this{
@@ -214,6 +242,40 @@
     height: 127px;
 }
 
+.chat-log{
+    box-shadow: inset 0 0 5px -1px #505050;
+}
+
+.JCI-logo{
+    top: 0px;
+    right: 0px;
+    height: 50px;
+    width: 50px;
+}
+
+.comparison-key{
+    background-color: #014d32;
+    color: white;
+    margin-top: 56px;
+}
+
+.key-row{
+    font-weight: bold;
+    border-color: #ababab;
+    color: white;
+}
+
+.key-row:hover{
+    background-color: #014d32;
+    color: white;
+}
+
 .bodyarea{
     min-height: calc(100vh - 127px);
+}
+
+.yt-video{
+    width: inherit;
+    height: 600px;
+    margin-bottom: -6px;
 }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main row justify-content-center">
+        <div class="col-11">
+            <div class="row table-header">
+                <div class="col-auto d-flex align-items-end">
+                    <span style="font-size: 24px; padding-right: 6px;" class="align-bottom">Providers for</span>
+                    <span style="font-size: 24px; padding-right: 6px;" class="align-bottom field-header">Hip Replacement</span>
+                    <span style="font-size: 24px; padding-right: 6px;" class="align-bottom">in</span>
+                    <span style="font-size: 24px; padding-right: 6px;" class="align-bottom field-header">India</span>
+                </div>
+                <div class="col-auto d-flex align-items-end">
+                    <span style="font-size: 18px; padding-right: 6px;" class="field-header-table">4 Results</span>
+                </div>
+            </div>
+            <a href="{{ url_for('comparison') }}" class="no-deco">
+                <!-- PROVIDER CELL START -->
+                <div class="row table-row">
+                    <div class="col-4 d-flex align-items-center">
+                        <img
+                            class="hospital-img align-middle"
+                            src="{{ url_for('static', filename='img/Apollo-Hospitals.jpg') }}"
+                            alt="group icon"
+                        />
+                    </div>
+                    <div class="col-8 position-relative">
+                        <img
+                            class="JCI-logo position-absolute"
+                            src="{{ url_for('static', filename='img/JCI_Gold_Seal.png') }}"
+                            alt="group icon"
+                        />
+                        <div class="row">
+                            <span style="font-size: 24px;" class="align-bottom field-header">Apollo Hospital Group</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px; padding-top: 10px;" class="field-header">Multiple Locations, India</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px;" class="field-header-table">Ahmedabad, Bangalore, Chennai, Delhi, Hyderabad, Kolkata, Lucknow, Mumbai</span>
+                        </div>
+                        <div class="row" style="font-size: 28px; padding-top: 10px; color: #014d32">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROVIDER CELL END -->
+            </a>
+            <a href="{{ url_for('comparison') }}" class="no-deco">
+                <!-- PROVIDER CELL START -->
+                <div class="row table-row">
+                    <div class="col-4 d-flex align-items-center">
+                        <img
+                            class="hospital-img align-middle"
+                            src="{{ url_for('static', filename='img/Primus-Super-Speciality-Hospital.jpg') }}"
+                            alt="group icon"
+                        />
+                    </div>
+                    <div class="col-8 position-relative">
+                        <img
+                            class="JCI-logo position-absolute"
+                            src="{{ url_for('static', filename='img/JCI_Gold_Seal.png') }}"
+                            alt="group icon"
+                        />
+                        <div class="row">
+                            <span style="font-size: 24px;" class="align-bottom field-header">Primus Super Speciality Hospital</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px; padding-top: 10px;" class="field-header">New Delhi, India</span>
+                        </div>
+                        <div class="row" style="font-size: 28px; padding-top: 10px; color: #014d32">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROVIDER CELL END -->
+            </a>
+            <a href="{{ url_for('comparison') }}" class="no-deco">
+                <!-- PROVIDER CELL START -->
+                <div class="row table-row">
+                    <div class="col-4 d-flex align-items-center">
+                        <img
+                            class="hospital-img align-middle"
+                            src="{{ url_for('static', filename='img/Fortis-Hospital.jpg') }}"
+                            alt="group icon"
+                        />
+                    </div>
+                    <div class="col-8 position-relative">
+                        <img
+                            class="JCI-logo position-absolute"
+                            src="{{ url_for('static', filename='img/JCI_Gold_Seal.png') }}"
+                            alt="group icon"
+                        />
+                        <div class="row">
+                            <span style="font-size: 24px;" class="align-bottom field-header">Fortis Hospital</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px; padding-top: 10px;" class="field-header">Multiple Locations, India</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px;" class="field-header-table">Bangalore, Mohali</span>
+                        </div>
+                        <div class="row" style="font-size: 28px; padding-top: 10px; color: #014d32">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROVIDER CELL END -->
+            </a>
+            <a href="{{ url_for('comparison') }}" class="no-deco">
+                <!-- PROVIDER CELL START -->
+                <div class="row table-row">
+                    <div class="col-4 d-flex align-items-center">
+                        <img
+                            class="hospital-img align-middle"
+                            src="{{ url_for('static', filename='img/Medanta-Hospital.jpg') }}"
+                            alt="group icon"
+                        />
+                    </div>
+                    <div class="col-8 position-relative">
+                        <img
+                            class="JCI-logo position-absolute"
+                            src="{{ url_for('static', filename='img/JCI_Gold_Seal.png') }}"
+                            alt="group icon"
+                        />
+                        <div class="row">
+                            <span style="font-size: 24px;" class="align-bottom field-header">Medanta Hospital</span>
+                        </div>
+                        <div class="row">
+                            <span style="font-size: 18px; padding-top: 10px;" class="field-header">Gurgaon, India</span>
+                        </div>
+                        <div class="row" style="font-size: 28px; padding-top: 10px; color: #014d32">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- PROVIDER CELL END -->
+            </a>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

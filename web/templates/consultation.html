@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main">
+        <div class="row" style="border-radius: .3rem;">
+            <div class="col-8" style="padding: 0px;">
+                <iframe class="yt-video" src="https://www.youtube.com/embed/9oFQzvPUzeU?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-4 chat-log"><br>
+                <span style="color: #014d32; font-weight: bold;">Ken Jeong: Text</span><br>
+                <span style="font-weight: bold;">You: Text</span><br>
+                <span style="color: #014d32; font-weight: bold;">Ken Jeong: Text</span><br>
+                <span style="font-weight: bold;">You: Text</span><br>
+                <span style="color: #014d32; font-weight: bold;">Ken Jeong: Text</span><br>
+                <span style="font-weight: bold;">You: Text</span><br>
+            </div>
+        </div>
+        <div class="row">
+            <input class="consultation-input" type="text" placeholder="Type a message"/>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

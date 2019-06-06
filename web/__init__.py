@@ -9,31 +9,24 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/analytics")
-def analytics():
-    return render_template("analytics.html")
+@app.route("/providers")
+def providers():
+    return render_template("providers.html")
 
 
-@app.route("/books")
-def books(error=None):
-    return render_template("books.html")
+@app.route("/comparison")
+def comparison():
+    return render_template("comparison.html")
 
 
-@app.route("/book", methods=['GET', 'POST'])
-def book():
-    error = None
-    if request.method == 'POST':
-        error = False
-        title = request.form['title']
-        author = request.form['author']
-        isbn = request.form['isbn']
-        try:
-            published = datetime.strptime(request.form["published"], '%Y-%m-%d')
-        except ValueError:
-            error = True
-        if error == False:
-            return render_template("books.html", error=error)
-    return render_template("addBook.html", error=error)
+@app.route("/consultation")
+def consultation():
+    return render_template("consultation.html")
+
+
+@app.route("/about_us")
+def about_us():
+    return render_template("about_us.html")
 
 
 def start():
