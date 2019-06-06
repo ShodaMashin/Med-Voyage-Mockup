@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="main">
+        <img
+            class="cover-img align-middle"
+            src="{{ url_for('static', filename='img/skyscanner.png') }}"
+            alt="cover image"
+        />
+    </div>
+
+    {% endblock %}
+</body>
+</html>

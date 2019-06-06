@@ -24,6 +24,11 @@ def consultation():
     return render_template("consultation.html")
 
 
+@app.route("/flights")
+def flights():
+    return render_template("flights.html")
+
+
 @app.route("/about_us")
 def about_us():
     return render_template("about_us.html")
